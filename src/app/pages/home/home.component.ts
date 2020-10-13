@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   loadSearch(term: string): void {
       this.moviesService.search(term).subscribe((response: any) => {
-        this.list.push(...response);
+        this.list = response;
         console.log(this.list);
       });
   }
