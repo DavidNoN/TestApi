@@ -1,7 +1,7 @@
 
 <div class="col-3">
 <div class="card" style="width: 18rem;">
-  <img [src]="imageURL" class="card-img-top" alt="...">
+  <img [src]="imageURL | noImage" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{ title }}</h5>
     <a (click)="getDetail()" class="btn btn-primary">Ver más...</a>
