@@ -1,7 +1,7 @@
 <app-navbar (termOut)="loadSearch($event)" ></app-navbar>
 <div class="row">
   <app-cards  *ngFor="let lis of list"
-              [imageURL]="lis.show.image.original"
+              [imageURL]="lis.show.image?.original"
               [title]="lis.show.name"
               [id]="lis.show.id"
   ></app-cards>

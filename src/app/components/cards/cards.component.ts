@@ -25,7 +25,7 @@ export class CardsComponent implements OnInit {
 
   loadDetails(): void {
     this.movieService.getDetails(this.id).subscribe(resp => {
-      this.list.push(...resp);
+      this.list = resp;
       console.log(this.list);
     });
   }

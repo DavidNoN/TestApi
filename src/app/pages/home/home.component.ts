@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit(): void {
+    this.loadSearch('');
   }
 
   loadSearch(term: string): void {
